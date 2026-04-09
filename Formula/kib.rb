@@ -1,26 +1,26 @@
 class Kib < Formula
   desc "The Headless Knowledge Compiler — turn raw sources into a queryable AI wiki"
   homepage "https://github.com/keeganthomp/kib"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/keeganthomp/kib/releases/download/v#{version}/kib-darwin-arm64"
-      sha256 "e392010bd76850cf9a750422159469a4e9f8923208c36275e2000b5247b9c347"
+      sha256 "ae0b180d16413cdcfd383c3e9dcb5d1febe18574a850d7abb90bc7b22eb4b151"
     else
       url "https://github.com/keeganthomp/kib/releases/download/v#{version}/kib-darwin-x64"
-      sha256 "2913b01f4b89e7254b9852afcff12886d813adaf6dfbbb1e744672791e1bce1d"
+      sha256 "6f6b55adf515495034b6f5cd13d06e4ecb3a16934822b46a2fb4516020de6c23"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/keeganthomp/kib/releases/download/v#{version}/kib-linux-arm64"
-      sha256 "64806984d0445de43de332b93d60e19c3fac2b2625949f7ba52b2f89f2974471"
+      sha256 "50b10f4dbfb39d4b5ad36a4ecb6875e6235a3561863cc76a959f37e4fccb08e9"
     else
       url "https://github.com/keeganthomp/kib/releases/download/v#{version}/kib-linux-x64"
-      sha256 "bcf8bd60197dafd1933aa3419f8be4bf43e2187130da91f1c0cf7dce4c84b98e"
+      sha256 "64d470718f54ad6c9eee6758fda8d7661ab61f4157a4ac0a7e47f0705af21280"
     end
   end
 
